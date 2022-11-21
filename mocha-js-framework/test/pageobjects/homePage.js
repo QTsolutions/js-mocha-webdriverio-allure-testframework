@@ -48,6 +48,43 @@ module.exports = new class HomePage{
         return $('#oldSelectMenu')
     }
 
+    test(){
+        return $('#userName-label');
+    }
+
+    emailLabel(){
+        return $('#userEmail-label');
+    }
+
+    mobileNoLabel(){
+         return $("#userNumber-label")
+    }
+
+    dobLabel(){
+        return $("#dateOfBirth-label");
+    }
+
+    hobbieLabel(){
+        return $("(//label[@class='form-label'])[6]");
+    }
+
+    headerLabel(){
+        return $("//div[@class='main-header']");
+    }
+
+    titleHeaderLabel(){
+        return $("//div[@class='main-header']");
+    }
+
+    selectValueHeader(){
+        return $("(//div[@class='col-md-6 col-sm-12'])[1]");
+    }
+
+    oldStyleText(){
+        return $("(//div[@class='col-md-6 col-sm-12'])[5]");
+    }
+
+
     async enterDetails(firstName,lastName,email){
         await this.firstname.setValue(firstName)
         await this.lastname.setValue(lastName)

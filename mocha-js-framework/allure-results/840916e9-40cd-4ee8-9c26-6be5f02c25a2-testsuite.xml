@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1669045908757' stop='1669045935256'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1669048637621' stop='1669048663141'>
     <name>demoQA form</name>
     <title>demoQA form</title>
     <test-cases>
-        <test-case start='1669045908758' status='passed' stop='1669045921604'>
+        <test-case start='1669048637623' status='passed' stop='1669048650509'>
             <name>navigate to demoqa</name>
             <title>navigate to demoqa</title>
             <labels>
@@ -17,7 +17,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669045921605' status='passed' stop='1669045925186'>
+        <test-case start='1669048650510' status='passed' stop='1669048653433'>
             <name>enter firstname</name>
             <title>enter firstname</title>
             <labels>
@@ -31,7 +31,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669045925188' status='passed' stop='1669045927369'>
+        <test-case start='1669048653434' status='passed' stop='1669048655560'>
             <name>select gender</name>
             <title>select gender</title>
             <labels>
@@ -45,7 +45,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669045927369' status='passed' stop='1669045929763'>
+        <test-case start='1669048655560' status='passed' stop='1669048657761'>
             <name>enter mobileNo</name>
             <title>enter mobileNo</title>
             <labels>
@@ -59,7 +59,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669045929763' status='passed' stop='1669045931840'>
+        <test-case start='1669048657761' status='passed' stop='1669048659839'>
             <name>display date</name>
             <title>display date</title>
             <labels>
@@ -73,7 +73,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669045931840' status='passed' stop='1669045935255'>
+        <test-case start='1669048659840' status='passed' stop='1669048663139'>
             <name>select hobbies</name>
             <title>select hobbies</title>
             <labels>

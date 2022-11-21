@@ -1,7 +1,7 @@
+const testData = require('../../testData.json');
 const homePage = require('../pageobjects/homePage');
 const basePage = require('../pageobjects/basePage');
 const moment = require('moment');
-const testData = require('../../testData.json');
 
 describe('demoQA form',()=>{
 
@@ -13,14 +13,14 @@ describe('demoQA form',()=>{
     it('enter firstname',async()=>{
         await homePage.enterDetails(testData.firstName, testData.lastName, testData.email);
         await browser.pause(2000);
-        let elem = await $('#userName-label');
+        let elem = await homePage.test();
         await expect(elem).toBeDisplayed();
     })
 
     it('select gender',async()=>{
         await homePage.clickOnRadioBtn();
         await browser.pause(2000);
-        let elem = await $('#userEmail-label');
+        let elem = await homePage.emailLabel();
         await expect(elem).toBeDisplayed();
         
     })  
@@ -28,27 +28,27 @@ describe('demoQA form',()=>{
     it('enter mobileNo',async()=>{
         await homePage.enterMobileNo(testData.mobileNo);
         await browser.pause(2000);
-        let elem = await $("(//div[@class='col-md-3 col-sm-12'])[4]");
+        let elem = await homePage.mobileNoLabel();
         await expect(elem).toBeDisplayed();
     })  
 
     it('display date',async()=>{
        await moment().format('DD MMM YYYY');
         await browser.pause(2000);
-        let elem = await $("#dateOfBirth-label");
+        let elem = await homePage.dobLabel();
         await expect(elem).toHaveText("Date of Birth");
     })  
 
     it('select hobbies',async()=>{
         await homePage.clickOnHobbies().scrollIntoView;
         await browser.pause(2000);
-        let elem = await $("(//label[@class='form-label'])[6]");
+        let elem = await homePage.hobbieLabel();
         await expect(elem).toHaveText("Hobbies");
     })  
 
 })
 
-describe('demoQA aler',()=>{
+describe('demoQA alert',()=>{
 
     it('navigate to demoqa alert',async()=>{
         await basePage.navigateToUrl2();
@@ -60,7 +60,7 @@ describe('demoQA aler',()=>{
         await homePage.clickOnAlertBtn();
         browser.acceptAlert();
         await browser.pause(2000);
-        let elem = await $("//div[@class='main-header']");
+        let elem = await homePage.headerLabel();
         await expect(elem).toHaveText("Alerts")
     })
 })
@@ -76,7 +76,7 @@ describe('demoQA select-menu',()=>{
         await homePage.clickOnValue();
         await homePage.clickOnDropdown();
         await browser.pause(2000);
-        let elem = await $("//div[@class='main-header']");
+        let elem = await homePage.titleHeaderLabel();
         await expect(elem).toHaveText("Select Menu")
     })
 
@@ -84,14 +84,14 @@ describe('demoQA select-menu',()=>{
         await homePage.clickOnTitle();
         await homePage.clickOnTitleDropDown();
         await browser.pause(2000);
-        let elem = await $("(//div[@class='col-md-6 col-sm-12'])[1]");
+        let elem = await homePage.selectValueHeader();
         await expect(elem).toExist();
     })
 
     it('select the color from menu',async()=>{
         await homePage.selectMenuDropdown().scrollIntoView;
         await browser.pause(2000);
-        let elem = await $("(//div[@class='col-md-6 col-sm-12'])[5]");
+        let elem = await homePage.oldStyleText();
         await expect(elem).toHaveText("Old Style Select Menu")
      })
 
