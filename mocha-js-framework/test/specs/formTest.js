@@ -1,6 +1,7 @@
-const homePage = require('../pageobjects/homePage')
-const basePage = require('../pageobjects/basePage')
-const moment = require('moment')
+const homePage = require('../pageobjects/homePage');
+const basePage = require('../pageobjects/basePage');
+const moment = require('moment');
+const testData = require('../../testData.json');
 
 describe('demoQA form',()=>{
 
@@ -10,7 +11,7 @@ describe('demoQA form',()=>{
     })
 
     it('enter firstname',async()=>{
-        await homePage.enterDetails("preksha","Vora","abc@gmail.com");
+        await homePage.enterDetails(testData.firstName, testData.lastName, testData.email);
         await browser.pause(2000);
         let elem = await $('#userName-label');
         await expect(elem).toBeDisplayed();
@@ -25,7 +26,7 @@ describe('demoQA form',()=>{
     })  
 
     it('enter mobileNo',async()=>{
-        await homePage.enterMobileNo("8876543210");
+        await homePage.enterMobileNo(testData.mobileNo);
         await browser.pause(2000);
         let elem = await $("(//div[@class='col-md-3 col-sm-12'])[4]");
         await expect(elem).toBeDisplayed();

@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1669033173350' stop='1669033179338'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1669045935276' stop='1669045943583'>
     <name>demoQA aler</name>
     <title>demoQA aler</title>
     <test-cases>
-        <test-case start='1669033173350' status='passed' stop='1669033177224'>
+        <test-case start='1669045935277' status='passed' stop='1669045941361'>
             <name>navigate to demoqa alert</name>
             <title>navigate to demoqa alert</title>
             <labels>
@@ -17,7 +17,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669033177225' status='passed' stop='1669033179338'>
+        <test-case start='1669045941362' status='passed' stop='1669045943582'>
             <name>click on first alert</name>
             <title>click on first alert</title>
             <labels>

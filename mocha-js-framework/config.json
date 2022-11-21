@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://demoqa.com/automation-practice-form",
+    "alertUrl": "https://demoqa.com/alerts",
+    "selectmenuUrl" : "https://demoqa.com/select-menu"
+}

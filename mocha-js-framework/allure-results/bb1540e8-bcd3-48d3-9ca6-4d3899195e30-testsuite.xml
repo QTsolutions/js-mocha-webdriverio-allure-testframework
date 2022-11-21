@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1669033179343' stop='1669033188764'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1669045943607' stop='1669045954281'>
     <name>demoQA select-menu</name>
     <title>demoQA select-menu</title>
     <test-cases>
-        <test-case start='1669033179343' status='passed' stop='1669033182040'>
+        <test-case start='1669045943607' status='passed' stop='1669045947227'>
             <name>navigate to demoqa select-menu</name>
             <title>navigate to demoqa select-menu</title>
             <labels>
@@ -17,7 +17,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669033182041' status='passed' stop='1669033184336'>
+        <test-case start='1669045947228' status='passed' stop='1669045949828'>
             <name>click on the value dropdown</name>
             <title>click on the value dropdown</title>
             <labels>
@@ -31,7 +31,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669033184336' status='passed' stop='1669033186617'>
+        <test-case start='1669045949828' status='passed' stop='1669045952200'>
             <name>click on the one dropdown</name>
             <title>click on the one dropdown</title>
             <labels>
@@ -45,7 +45,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1669033186617' status='passed' stop='1669033188764'>
+        <test-case start='1669045952200' status='passed' stop='1669045954281'>
             <name>select the color from menu</name>
             <title>select the color from menu</title>
             <labels>
