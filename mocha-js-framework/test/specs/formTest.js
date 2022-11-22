@@ -6,7 +6,7 @@ const moment = require('moment');
 describe('demoQA form',()=>{
 
     it('navigate to demoqa',async()=>{
-        await basePage.navigateToUrl();
+        await basePage.navigateToFormUrl();
         await expect(browser).toHaveTitle('ToolsQA')
     })
 
@@ -51,7 +51,7 @@ describe('demoQA form',()=>{
 describe('demoQA alert',()=>{
 
     it('navigate to demoqa alert',async()=>{
-        await basePage.navigateToUrl2();
+        await basePage.navigateToAlertUrl();
         await browser.pause(2000);
         await expect(browser).toHaveUrlContaining("alerts")
     })
@@ -67,7 +67,7 @@ describe('demoQA alert',()=>{
 
 describe('demoQA select-menu',()=>{
     it('navigate to demoqa select-menu',async()=>{
-        await basePage.navigateToUrl3();
+        await basePage.navigateToSelectMenuUrl();
         await browser.pause(2000);
         await expect(browser).toHaveUrl("https://demoqa.com/select-menu");
     })
