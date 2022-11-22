@@ -10,4 +10,5 @@
 # for generate the report open the terminal and run below command:
   `allure generate && allure open`
 
+![image](https://user-images.githubusercontent.com/83230546/203111847-876069d6-b44f-492a-b797-18438caa939d.png)
 
